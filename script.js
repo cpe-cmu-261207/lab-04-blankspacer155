@@ -84,21 +84,22 @@ function create_task(input) {
         tododiv.append(taskdiv)
     //hover effect
     taskdiv.addEventListener('mouseover',()=>{
-        donebtn.setAttribute('style','visibility:visible;')
-        delbtn.setAttribute('style','visibility:visible;')
+        donebtn.setAttribute('style','visibility:visible;background-color:rgb(62, 250, 15);')
+        delbtn.setAttribute('style','visibility:visible;background-color:rgb(250, 15, 105);')
     })
     taskdiv.addEventListener('mouseout',()=>{
-        donebtn.setAttribute('style','visibility:hidden;')
-        delbtn.setAttribute('style','visibility:hidden;')
+        donebtn.setAttribute('style','display:none;visibility:hidden;')
+        delbtn.setAttribute('style','display:none;visibility:hidden;')
     })
 
         const task = document.createElement('p')
-        task.setAttribute('style','margin-right:10px;')
+        task.setAttribute('style','margin:10px;')
         task.innerText = input
         taskdiv.append(task)
 
         const donebtn = document.createElement('button')
         donebtn.setAttribute('class','btn_style')
+        donebtn.setAttribute('style','display:none;visibility:hidden;')
         donebtn.innerHTML = "done"
         donebtn.addEventListener('click',()=>{
            
@@ -115,6 +116,7 @@ function create_task(input) {
 
         const delbtn = document.createElement('button')
         delbtn.setAttribute('class','btn_style')
+        delbtn.setAttribute('style','display:none;visibility:hidden;')
         delbtn.innerHTML = "delete"
         delbtn.addEventListener('click',()=>{
             const ind_task = Array.prototype.indexOf.call(tododiv.children, taskdiv)

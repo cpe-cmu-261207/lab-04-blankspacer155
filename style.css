@@ -1,5 +1,7 @@
 body{
-    font-size: large;
+    font-size: 30px;
+    font-family: 'Zen Loop', cursive;
+    background-color: rgb(238, 189, 184);
 }
 
 .header{
@@ -7,35 +9,56 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: gray;
+    background-color: rgb(230, 124, 124);
+    font-weight: bold;
+    font-size: 40px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .tododiv_style{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    background-color: rgb(161, 131, 31);
+  
+    
 }
 
 .donediv_style{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    background-color: rgb(109, 161, 31);
+  
 }
 
 .task_style{
     display: flex;
     flex-direction: row;
     background-color: khaki;
+    
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 0.75rem;
+   
 }
 
 .done_style{
     background-color: rgb(143, 240, 140);
     text-decoration: line-through;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 0.75rem;
 }
 
 .btn_style{
-    background-color: purple;
-    visibility: hidden;
+    margin: 2px 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 100%;
+    
 }
