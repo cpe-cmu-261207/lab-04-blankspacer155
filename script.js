@@ -124,7 +124,6 @@ function create_task(input) {
             let Alltask_jav = JSON.parse(localStorage.Alltask)
             Alltask_jav.todolist.splice(ind_task,1)
             localStorage.Alltask = JSON.stringify(Alltask_jav)
-            console.log(ind_task)
 
             tododiv.removeChild(taskdiv)
         })
