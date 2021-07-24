@@ -1,0 +1,41 @@
+body{
+    font-size: large;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+}
+
+.tododiv_style{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: rgb(161, 131, 31);
+}
+
+.donediv_style{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: rgb(109, 161, 31);
+}
+
+.task_style{
+    display: flex;
+    flex-direction: row;
+    background-color: khaki;
+}
+
+.done_style{
+    background-color: rgb(143, 240, 140);
+    text-decoration: line-through;
+}
+
+.btn_style{
+    background-color: purple;
+    visibility: hidden;
+}
